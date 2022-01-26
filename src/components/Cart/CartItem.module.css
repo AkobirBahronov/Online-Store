@@ -1,0 +1,128 @@
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  margin-top: 15px;
+}
+
+.detail h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 27px;
+  margin: 0;
+}
+
+.detail h4 {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 27px;
+  margin: 16px auto 12px;
+}
+.mini h3,
+.mini h4 {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  margin: 0;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 18px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.mini .price {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 160%;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.cart-item section {
+  display: flex;
+  width: 200px;
+}
+
+.mini section {
+  width: 150px;
+}
+.image {
+  display: flex;
+}
+
+.image > img {
+  max-width: 141px;
+  max-height: 185px;
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+.mini .image > img {
+  max-width: 105px;
+  max-height: 137px;
+}
+
+.left-vector,
+.right-vector {
+  position: relative;
+  left: 15px;
+  align-self: center;
+  border: 0;
+  background: 0;
+  color: #0a84b4;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.right-vector {
+  left: -15px;
+}
+
+.number {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.number button {
+  font-family: "Raleway", sans-serif;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #1d1f22;
+  font-weight: 100;
+  font-size: 50px;
+  line-height: 40px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.number button:hover,
+.number button:active {
+  background: #1d1f22;
+  color: #ffffff;
+}
+
+.number h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 400%;
+  text-align: center;
+  margin: 0;
+}
+
+.mini .number button {
+  width: 24px;
+  height: 24px;
+  font-size: 30px;
+  line-height: 20px;
+}
+
+.mini .number h3 {
+  font-size: 16px;
+}

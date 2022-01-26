@@ -1,0 +1,39 @@
+.logo {
+  width: 41px;
+  height: 41px;
+  padding-top: 7px;
+}
+
+.container {
+  width: calc(50% + 41px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__navigation ul {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.header__navigation a {
+  text-decoration: none;
+  height: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 120%;
+  text-transform: uppercase;
+  padding: 4px 16px 30px;
+}
+
+.header__navigation a:hover,
+.header__navigation a:active,
+.header__navigation a.active {
+  border-bottom: 2px solid #5ece7b;
+  font-weight: 600;
+  color: #5ece7b;
+}

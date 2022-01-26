@@ -1,0 +1,16 @@
+.cart {
+  margin: 80px 16% 50px 7%;
+}
+
+.cart .title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 60px;
+}
+
+.cart hr {
+  color: #e5e5e5;
+  height: 1px;
+}
