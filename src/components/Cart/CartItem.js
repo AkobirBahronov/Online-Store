@@ -35,6 +35,7 @@ class CartItem extends Component {
       <div>
         {product.attributes.map((attribute) => (
           <div key={attribute.name}>
+            <div className={classes["attribute-name"]}>{attribute.name}:</div>
             <ProductAttribute
               forMiniCart={isMiniCart}
               forCart

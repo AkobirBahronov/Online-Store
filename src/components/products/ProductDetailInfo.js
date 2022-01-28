@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import ReactHtmlParser from "html-react-parser";
 import ProductAttribute from "./ProductAttribute";
@@ -55,6 +54,7 @@ class ProductDetailInfo extends Component {
     const productPrice =
       product.prices[this.props.selectedCurrencyId].currency.symbol +
       product.prices[this.props.selectedCurrencyId].amount;
+
     return (
       <div className={classes.info}>
         <h2>{product.brand}</h2>
@@ -62,15 +62,13 @@ class ProductDetailInfo extends Component {
         {productAttributes}
         <h4>Price:</h4>
         <div className={classes.price}>{productPrice}</div>
-        <Link to={"/"}>
-          <button
-            onClick={this.addToCartHandler.bind(this)}
-            className={!addingIsValid ? classes.invalid : ""}
-            disabled={product.inStock ? false : true}
-          >
-            ADD TO CART
-          </button>
-        </Link>
+        <button
+          onClick={this.addToCartHandler.bind(this)}
+          className={!addingIsValid ? classes.invalid : ""}
+          disabled={product.inStock ? false : true}
+        >
+          ADD TO CART
+        </button>
         {!product.inStock && (
           <p className={classes.warning}>
             This product is out of Stock now, please come later!

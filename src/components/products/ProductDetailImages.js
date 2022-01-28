@@ -20,10 +20,14 @@ class ProductDetailImages extends Component {
   }
 
   render() {
-    const { images } = this.props;
+    const { images, inStock } = this.props;
 
     const smImagesVr = images.length > 5 ? images.slice(0, 4) : images;
     const smImagesHr = images.length > 5 ? images.slice(4) : null;
+
+    const activeImageClassName = `${classes["active-image"]} ${
+      !inStock ? classes.unavailable : ""
+    }`;
 
     return (
       <div className={classes.images}>
@@ -31,8 +35,9 @@ class ProductDetailImages extends Component {
           <div className={classes["images-vr"]}>
             {this.displaySmImages.bind(this, smImagesVr)()}
           </div>
-          <div className={classes["active-image"]}>
+          <div className={activeImageClassName}>
             <img src={this.state.activeImage} alt="activeImage" />
+            {!inStock && <p>OUT OF STOCK</p>}
           </div>
         </div>
         {!!smImagesHr && (

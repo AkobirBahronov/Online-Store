@@ -66,7 +66,10 @@ class ProductDetail extends Component {
     }
     return (
       <div className={classes.pdp}>
-        <ProductDetailImages images={this.state.product.gallery} />
+        <ProductDetailImages
+          images={this.state.product.gallery}
+          inStock={this.state.product.inStock}
+        />
         <ProductDetailInfo product={this.state.product} />
       </div>
     );

@@ -32,7 +32,7 @@
   opacity: 0;
 }
 
-.currency {
+.currency > div:first-child {
   width: 28px;
   display: flex;
   justify-content: space-between;
@@ -53,5 +53,11 @@
 .currency:hover .v-close {
   opacity: 1;
   visibility: visible;
+  transition: opacity 200ms ease-in-out;
+}
+
+.disappear:hover .currency-types {
+  opacity: 0;
+  visibility: hidden;
   transition: opacity 200ms ease-in-out;
 }

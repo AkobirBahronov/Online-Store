@@ -48,9 +48,12 @@
   cursor: pointer;
 }
 
-.info button:hover,
-.info button:active {
+.info button:hover {
   background: #1ab844;
+}
+
+.info button:active {
+  background-color: #07a731;
 }
 
 .description {
@@ -78,7 +81,7 @@ p.invalid {
   color: #ff0000;
 }
 
-.info a:hover + p.warning {
+.info button:hover + p.warning {
   opacity: 1;
   visibility: visible;
 }
