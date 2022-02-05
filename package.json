@@ -2,7 +2,7 @@
   "name": "app001",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/AkobirBahronov/Online-Store/tree/gh-pages",
+  "homepage": "https://AkobirBahronov.github.io/react-gh-pages",
   "dependencies": {
     "-": "^0.0.1",
     "@apollo/client": "^3.5.6",
