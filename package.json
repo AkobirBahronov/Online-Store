@@ -2,7 +2,7 @@
   "name": "app001",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://akobirbahronov.github.io/Online-Store",
+  "homepage": "https://akobirbahronov.github.io/Online-Store",
   "dependencies": {
     "-": "^0.0.1",
     "@apollo/client": "^3.5.6",
